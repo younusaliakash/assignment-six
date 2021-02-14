@@ -1,6 +1,6 @@
 # assignment-six : Fancy-Slider
 
-<h4>Extra Features</h4>
+<h3>Extra Features</h3>
 1. When Click or Press Enter :
   (Spinner Loading Until data showing, User can See search status like total result and searching Time below input bar.)
 
