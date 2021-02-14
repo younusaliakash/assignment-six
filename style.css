@@ -1,0 +1,139 @@
+
+.main-container{
+  background-color: #F0F2F5;
+}
+#search, #search-btn, #duration, #create-slider, #selected-picture-status, #slider-text {
+  border-radius: 18px;
+}
+.form-control:hover{
+  box-shadow: -3px 0px 0px 1px rgba(63,61,61,0.1)!important;
+}
+#sliders {
+  height: 400px;
+  width: 60%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.gallery-header {
+  display: none;
+}
+
+.slider-item {
+  display: none;
+}
+
+.img-thumbnail {
+  cursor: pointer;
+}
+
+.added {
+  border: 2px solid #1e1743;
+  border-radius: 5px;
+}
+
+img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.prev-next {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+}
+
+.prev, .next {
+  background-color: transparent;
+  padding: 8px 10px;
+  color: #fff;
+}
+
+.dot {
+  background-color: rgb(163, 156, 156);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.main {
+  display: none;
+}
+#spinner{
+  width:100%;
+  height:40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner-square {
+  display: flex;
+  flex-direction: row;
+  width: 90px;
+  height: 120px;
+}
+
+.spinner-square > .square {
+  width: 17px;
+  height: 80px;
+  margin: auto auto;
+  border-radius: 4px;
+}
+
+.square-1 {
+  animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite;
+}
+
+.square-2 {
+  animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 200ms infinite;
+}
+
+.square-3 {
+  animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 400ms infinite;
+}
+
+@keyframes square-anim {
+  0% {
+      height: 80px;
+      background-color: rgb(111, 163, 240);
+  }
+  20% {
+      height: 80px;
+  }
+  40% {
+      height: 120px;
+      background-color: rgb(111, 200, 240);
+  }
+  80% {
+      height: 80px;
+  }
+  100% {
+      height: 80px;
+      background-color: rgb(111, 163, 240);
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .justify-content-around.align-items-center.mt-3.gallery-header.mb-2 {
+    flex-direction: column;
+  }
+  #sliders {
+    height: 300px;
+    width: 90%;
+  }
+  
+}
+
+#search-info, #select-status{
+  display: none;
+}
+.slider-img{
+  border-radius: 10px;
+}
