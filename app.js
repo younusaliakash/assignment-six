@@ -90,7 +90,7 @@ const createSlider = () => {
     let item = document.createElement("div");
     item.className = "slider-item";
     item.innerHTML = `
-    <h4 id="slider-text" class="d-flex justify-content-center mb-3 bg-light">You are Watching ${sliders.length} Pictures Slider</h4>
+    <h4 id="slider-text" class="d-flex justify-content-center mb-3 bg-light">You created a Slider with ${sliders.length} images</h4>
     <img class="slider-img w-100"
     src="${slide}"
     alt="">`;
